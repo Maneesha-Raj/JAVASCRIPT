@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x="Alchemist is written by Paulo Coelho.";
+        document.write(`The string is : ${x}`)
+       document.write("<br>The length of string is :"+x.length)
+       document.write("<br>Character at 5th position is : ",x.charAt(4))
+       document.write("<br> First Character of second word is : ",x.charAt(10))
+       document.write("<br> First Character of third word is : ",x.at(13))
+       document.write("<br>Uppercase :",x.toUpperCase());
+       document.write("<br>Lowercase : ",x.toLowerCase());
+       let a="New";
+       a=a.concat(" ","Year");
+       document.write("<br>Message : ",a);
+       document.write("<br>",x.repeat(3));
+       let n="I like icecream and I like to sleep.";
+       document.write("<br>Slice Operation: ",n.slice(2,15));
+       document.write("<br>Slice Operation: ", n.slice(5));
+       document.write("<br>Replace Operation : ",n.replace(/like/g,"don't like"));
+       document.write("<br>Search operation : ",n.search(/sleep/g));
+       
+       let y="https://kba.ai/";
+       let g=y.split(".")
+       document.write("<br>The split: ",g);
+
+       let c="Anu";
+       let d="Sid";
+       let e=c*d;
+       let f=c/d;
+       document.write("<br>* operation on 2 strings: ",e)
+       document.write("<br> / operation on 2 strings: ",f)
+
+       let k="10";
+       let l="20";
+       let sum=k+l;
+       let u=Number.parseInt(k);
+       let v=Number.parseInt(l);
+       let sum2=u+v;
+       document.write("<br>Sum as strings: ",sum);
+       document.write("<br>Sum as numbers :",sum2);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js"></script>
+</head>
+<body>
+    Enter username:
+    <input id="id1">
+    Enter password:
+    <input type="password" id="id2">
+    <button onclick="submit()">Log in</button>
+
+    <script>
+        let x=localStorage.getItem("user");
+        let y=localStorage.getItem("pwd");
+            
+        if(x=="maneesha@gmail.com" && y=="maneesha"){
+            document.write("Logged in");
+        }
+      
+    </script>
+</body>
+</html>

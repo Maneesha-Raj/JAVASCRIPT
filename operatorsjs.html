@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript  Operators</h1>
+    <h3>typeOf() operation</h3>
+    <p id="demo"></p>
+    <p id="id2"></p>
+    <h3>Arithmetic Operators</h3>
+    <p id="id3"></p>
+    <p id="id4"></p>
+    <p id="id5"></p>
+    <p id="id6"></p>
+    <p id="id9"></p>
+    <h3>Increment & Decrement OPerators</h3>
+    <p id="id7"></p>
+    <p id="id8"></p>
+    
+    <h3>Logical operations</h3>
+    <p id="id10"></p>
+    <p id="id11"></p>
+    <p id="id12"></p>
+    <h3>Bitwise operations</h3>
+    <p id="id13"></p>
+    <p id="id14"></p>
+    <p id="id15"></p>
+    <h3>Ternary Operator</h3>
+    <p id="num"></p>
+    <p id="voting"></p>
+    <script>
+        var a=5;
+        var b='A';
+        document.getElementById("demo").innerHTML=typeof(a)
+        document.getElementById("id2").innerHTML=typeof(b)
+
+        let c=3;
+        let d=8;
+        c+=d;
+        let x=10;
+        let y=6;
+        z=(x<y)
+        document.getElementById("id3").innerHTML="Sum is :"+c
+        document.write("Is x lessthan y :",z)
+
+        let j=6;
+        let k=4;
+        j-=k;
+        document.getElementById("id4").innerHTML="Difference :"+j
+
+        let l=5;
+        let m=2;
+        l*=m;
+        document.getElementById("id5").innerHTML="Product is :"+l
+
+        let n=125;
+        let p=5;
+        n/=p;
+        document.getElementById("id6").innerHTML="Quotient is :"+n
+
+        let u=125;
+        let v=5;
+        u%=v;
+        document.getElementById("id9").innerHTML="Remainder is :"+u
+
+        let r=10;
+        document.getElementById("id7").innerHTML="Before Increment :"+r+"<br>After increment :"+(++r)
+        
+        
+        i=7;
+        document.write(`<br>Before increment value of i=${i}`)/*display value using $ sign */
+        q=i++;
+        t=++i; 
+        document.write("<br>Postincrement operation :"+q)
+        document.write("<br>Preincrement operation :"+t)
+
+
+        let s=10;
+        s--;
+        document.getElementById("id8").innerHTML="Decrement is :"+s
+
+        let a1=8;
+        let b1=1;
+        let x1=2;
+        let y1=2;
+        c1=(a1<b1)&&(x1==y1);
+        document.getElementById("id10").innerHTML="Logical AND operation :"+c1
+        d1=a1&b1;
+        document.getElementById("id13").innerHTML="Bitwise AND operation(&) :"+d1
+        e1=(a1<b1)||(x1==y1);
+        document.getElementById("id11").innerHTML="Logical OR operation :"+e1
+        f1=a1|b1;
+        document.getElementById("id14").innerHTML="Bitwise OR operation(|) :"+f1
+
+
+        let age=document.getElementById("num").innerHTML=28;
+        let vote=(age<18)?"Not Eligible":"Eligible";
+        document.getElementById("voting").innerHTML=vote+"&nbsp to vote"
+
+
+
+    </script>
+
+</body>
+</html>

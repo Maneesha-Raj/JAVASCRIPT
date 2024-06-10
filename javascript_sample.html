@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    Enter your name :
+    <input id="text" onchange="textC()">
+    <br>
+    Entered name:
+    <p id="demo"></p>
+    Type :
+    <p id="id2"></p>
+
+    Enter age:
+    <input id="text2"  onchange="textC()">
+    <br>
+    Entered age:
+    <p id="demo2"></p>
+    Type :
+    <p id="id3"></p>
+
+    Enter first name:
+    <input id="fname">
+    
+    
+    Enter last name:
+    <input id="lname">
+    <br>
+
+    <button onclick="textC()">Click Here</button>
+    <br>
+    Full name:
+    <p id="fullname"></p>
+    <br>
+    
+    
+    <script>
+        function textC(){
+        let x=document.getElementById("text").value;
+        document.getElementById("demo").innerHTML=x;
+        document.getElementById("id2").innerHTML=typeof x;
+
+        let y=document.getElementById("text2").value;
+        document.getElementById("demo2").innerHTML=y;
+        document.getElementById("id3").innerHTML=typeof y;
+
+        let f=document.getElementById("fname").value;
+    
+        let l=document.getElementById("lname").value;
+        
+        let flname=f+" "+l;
+
+        document.getElementById("fullname").innerHTML=flname;
+
+        console.log(event);
+        console.log(event.target.value);
+    }
+    </script>
+</body>
+</html>

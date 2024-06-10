@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-10">
+    <div class="ml-24">  
+        <h1 class="font-serif text-4xl ml-60 mt-2 font-bold">Kerala Blockchain Academy</h1>
+        <br>
+        <div class="ml-80 mt-6">
+            <img src="./images/IMG-20240422-WA0000.jpg">
+        </div>
+        <br>
+        <div class="ml-80">
+            <div class="font-serif  mt-6 font-bold text-xl">
+            <p>This is to certify  that <span id="demo"></span><br>
+            has successfully completed <span id="id3"></span> <br>with  Grade<span id="id4"></span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("demo").innerHTML=localStorage.getItem("name");
+        document.getElementById("id3").innerHTML=localStorage.getItem("course");
+        document.getElementById("id4").innerHTML=localStorage.getItem("grade");
+    </script>
+</body>
+</html>

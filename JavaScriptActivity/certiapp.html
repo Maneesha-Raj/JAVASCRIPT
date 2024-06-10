@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="certi.js"></script>
+</head>
+<body>
+
+    <h1>Certificate Dapp</h1>
+    
+    <h3>Issue New Certificate</h3>
+
+    Select Course:
+    <select id="id1">
+        <option value="Certified Blockchain Associate" selected>Certified Blockchain Associate</option>
+        <option value="Certified Ethereum Developer" selected>Certified Ethereum Developer</option>
+        <option value="Developer Essentials for Blockchain" selected>Developer Essentials for Blockchain</option>
+    </select>
+    <br>
+    <p></p>
+    Certificate Id:
+    <input id="id2">
+    <br>
+    <p></p>
+    Candidate Name:
+    <input id="id3">
+    <br>
+    <p></p>
+    Select Grade:
+    <select id="id4">
+        <option value="S" selected>S</option>
+        <option value="A" selected>A</option>
+        <option value="B" selected>B</option>
+        <option value="C" selected>C</option>
+        <option value="D" selected>D</option>
+    </select>
+    <br>
+    <p></p>
+    Issue Date:
+    <input type="date" id="id5" >
+    <br>
+    <p></p>
+    <button onclick="readval()">Issue Certificate</button>
+
+        <p id="val1"></p>
+        <p id="val2"></p>
+        <p id="val3"></p>
+        <p id="val4"></p>
+        <p id="val5"></p>
+
+    <script>
+        document.getElementById("val1").innerHTML=localStorage.getItem("id");
+        document.getElementById("val2").innerHTML=localStorage.getItem("name");
+        document.getElementById("val3").innerHTML=localStorage.getItem("course");
+        document.getElementById("val4").innerHTML=localStorage.getItem("grade");
+        document.getElementById("val5").innerHTML=localStorage.getItem("date");
+    </script>
+        
+        
+
+    
+</body>
+</html>

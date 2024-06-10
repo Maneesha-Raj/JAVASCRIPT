@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter first number:
+    <input id="text1">
+    Enter second number:
+    <input id="text2">
+    <p></p>
+    <button onclick="add()">Add</button>
+    Sum is :
+    <p id="sum"></p>
+
+    <p></p>
+    <button onclick="sum1()">Find Sum</button>
+    Sum is :
+    <p id="id1"></p>
+    <script>
+        let add=()=>{   //arrow function "=>" : function name [equal to] = () [arrow_function]=> {}
+            
+            let a=document.getElementById("text1").value; //value entered is taken as string
+            let b=document.getElementById("text2").value;  
+            a=Number.parseInt(a); //converting string to number
+            b=Number.parseInt(b);
+            let add=a+b;          //function name can be used as variable name to store the result using '=>'
+            document.getElementById("sum").innerHTML=add;   
+
+        }  //using arrow function return value will be stored in 'add' ;
+        // 'add' is function name , can be used to store values(return value) like variables by using '=>' function
+        
+        function sum1(){
+            let a=document.getElementById("text1").value; //value entered is taken as string
+            let b=document.getElementById("text2").value;  
+            a=Number.parseInt(a); //converting string to number
+            b=Number.parseInt(b);
+            let sum1=a+b;
+            document.getElementById("id1").innerHTML=sum1;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="NumAdd.js"></script> <!--path of js file-->
+</head>
+<body>
+    Enter first number:
+    <input id="text1"> <!--Input entered is taken as string-->
+    <br>
+    <p></p>
+    Enter second number :
+    <input id="text2">
+    <br>
+    Type of first number:
+    <p id="id1"></p>
+    <br>
+    Type of second number:
+    <p id="id2"></p>
+    <p></p>
+    <button onclick="add()">Add</button>
+    Sum is :
+    <p id="sum"></p>
+    <br>
+    <p></p>
+    <button onclick="mul()">Multiply</button>
+    
+    Product is :
+    <p id="prod"></p>
+    <br>
+    <p></p>
+    <button onclick="div()">Divide</button>
+   
+    Quotient is :
+    <p id="quotient"></p>
+
+    <script>
+        let person={        //declaring a variable that have multiple values
+            fname:"Maneesha",   //fields of variable person
+            lname:"Raj",
+            place:"Chengannur"
+        }
+        document.write("<br>Name of Person : ",person.fname); //variable_name.field_name
+        
+
+    </script>
+</body>
+</html>

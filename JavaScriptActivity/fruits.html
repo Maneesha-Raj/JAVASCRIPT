@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myfruit.js"></script>
+</head>
+<body>
+    Select Index:
+    <select id="id1" onchange="selectfruit()">
+        <option value="0" selected>0</option>
+        <option value="1" selected>1</option>
+        <option value="2" selected>2</option>
+        <option value="3" selected>3</option>
+        <option value="4" selected>4</option>
+    </select>
+    <br>
+    <p></p>
+    Selected Fruit is :
+    <p id="frt"></p>
+    <script>
+        let fruits=["Apples","Mangoes","Bananas","Oranges","Strawberries"];
+        document.write("List of Fruits: ",fruits);
+    </script>
+</body>
+</html>

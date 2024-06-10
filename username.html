@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter username:
+    <input id="text1">
+    <button onclick="check()">Search</button>
+    <script>
+        function check(){
+            let a="anu123@gmail.com";
+            let b=document.getElementById("text1").value;
+            if(a==b){
+                document.write("Valid Username");
+            }
+            else{
+                document.write("Invalid username");
+            }
+        }
+
+    </script>
+</body>
+</html>

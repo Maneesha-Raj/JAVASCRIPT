@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bookticket.js"></script>
+</head>
+<body>
+
+    <form style="background-color: rgb(236, 102, 136); width: 30%; height: 10%; padding: 2%">
+        <h1 style="text-align: center;">MOVIE BOOKING</h1>
+            <p id="" style="text-align: center; font-size: large ;font-weight:bold;">Film name : <span id="s1"></span><br>No. of Tickets : <span id="s2"></span> tickets booked<br>Customer name : <span id="s3"></span></p>
+            <hr>
+            <p style="font-size: x-large; font-weight: bold; font-family: 'Times New Roman', Times, serif; text-align: center">THANK YOU...</p>
+    </form>
+    <script>
+        
+
+        document.getElementById("s1").innerHTML=localStorage.getItem("Film");
+        document.getElementById("s2").innerHTML=localStorage.getItem("Tickets");
+        document.getElementById("s3").innerHTML=localStorage.getItem("Name");
+
+
+    </script>
+</body>
+</html>

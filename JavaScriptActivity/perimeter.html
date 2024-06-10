@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="peri.js"></script>
+</head>
+<body>
+    Perimeter of square, circle, rectangle using function in external js file.
+    <br>
+    <script>
+        let a= 8;
+        let sq=square(a);
+        document.write(`<br>Side of square is ${a}`);
+        document.write("<br>Perimeter of Square is : ",sq);
+        let p=10;
+        let q=5;
+        let rec=rect(p,q);
+        document.write(`<br>Length and Breadth of rectangle is ${p} and ${q}`);
+        document.write("<br>Perimeter of Rectangle is : ",rec);
+        let rad=6;
+        let cir=circle(rad);
+        document.write(`<br>Radius of circle is ${rad}`);
+        document.write("<br>Perimeter of circle is : ",cir);
+
+    </script>
+</body>
+</html>

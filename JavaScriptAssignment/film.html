@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bookticket.js"></script>
+</head>
+<body>
+    Program to enter name, film,no. of tickets as key to an 
+    object from a text box and a button for submit and there 
+    should be a ticket template like “Name booked no. of 
+    tickets for film” and autogenerate ticket on submitting
+    the button.
+
+    <br>
+    <p></p>
+    Enter name :
+    <input id="name">
+    <br>
+    <p></p>
+    Enter film name :
+    <input id="film">
+    <br>
+    <p></p>
+    Enter no.of tickets :
+    <input id="tickets">
+    <br>
+    <p></p>
+    <button onclick="bookticket()">Submit</button>
+
+    <p id="text1"></p>
+
+    <a href="ticket.html"><button onclick="bookticket()">Generate Ticket</button></a>
+
+    <script>
+        let n1=localStorage.getItem("Name");
+        let f1=localStorage.getItem("Film");
+        let t1=localStorage.getItem("Tickets");
+        
+
+    </script>
+</body>
+</html>

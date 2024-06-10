@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter your Personal details on input field & print on submit.
+    <br>
+    <p></p>
+    Enter your name:
+    <input id="id1" >
+    <br>
+    <p></p>
+    Enter your age :
+    <input id="id2" >
+    <br>
+    <p></p>
+    Enter your qualification:
+    <input id="id3" >
+    <br>
+    <p></p>
+    Enter contact number:
+    <input id="id4" >
+    <br>
+    <p></p>
+
+    <button onclick="textC()">Submit</button>
+    <br>
+    <p></p>
+    Name:
+    <p id="demo1"></p>
+    <br>
+    Age :
+    <p id="demo2"></p>
+    <br>
+    Qualification:
+    <p id="demo3"></p>
+    <br>
+    Contact number:
+    <p id="demo4"></p>
+    <br>
+    
+    
+    
+    
+    <script>
+        function textC(){
+        let x=document.getElementById("id1").value;
+        document.getElementById("demo1").innerHTML=x;
+        
+
+        let y=document.getElementById("id2").value;
+        document.getElementById("demo2").innerHTML=y;
+       
+
+        let f=document.getElementById("id3").value;
+        document.getElementById("demo3").innerHTML=f;
+    
+        let l=document.getElementById("id4").value;
+        document.getElementById("demo4").innerHTML=l;
+        
+       
+
+    
+    }
+    </script>
+</body>
+</html>

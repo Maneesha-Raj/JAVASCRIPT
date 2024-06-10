@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=["Apples","Mangoes","Bananas"];
+        document.write("List of Fruits: ",fruits);
+        document.write("<br>Type is :",typeof fruits);
+
+       // let numb=[1,2,3];
+       // document.write("<br>List : ",numb);
+       // document.write("<br>Type is :",typeof numb);
+
+        document.write("<br> Is this an array: ",Array.isArray(fruits));
+        document.write("<br>Length of array is :",fruits.length)
+        document.write("<br>Second element in array: ",fruits[1]);
+        fruits[3]="Water Melon";
+        document.write("<br>New List of Fruits: ",fruits);
+        fruits.push("Grapes");
+        document.write("<br>My new list of fruits:",fruits);
+        let p=fruits.pop();
+        document.write("<br>Element removed:",p);
+        document.write("<br>New array is :",fruits);
+        delete(fruits[1]);
+        document.write("<br>New list of array after deletion: ",fruits);
+        
+        delete(fruits[1]);
+        document.write("<br>Deletion of location 2: ",fruits[1]);
+        document.write("<br>List of array after deletion of location 2: ",fruits);
+        
+        let f1=fruits.slice(1);
+        document.write("<br>Favourite fruit :",f1);
+        let f2=fruits.slice(1,3);
+        document.write("<br>Favourite fruits :",f2);
+        
+        let i=fruits.indexOf("Bananas");
+        document.write("<br>Index of element :",i);
+        let pos=i+1;
+        document.write("<br>Position of element 'Bananas' : ",pos);
+        document.write("<br>Position of the element 'WaterMelon' : ",fruits.indexOf("Water Melon")+1);
+        fruits.push("Oranges");
+        document.write("<br>",fruits);
+        document.write("<br>Sorted list : ",fruits.sort());
+        document.write("<br>Reverse :",fruits.reverse());
+        myFruit=fruits.toString();
+        document.write("<br>To String :",myFruit);
+        myString=myFruit[2];
+        document.write("<br>Second character: ",myString);
+        document.write("<br>Include : ",fruits.includes("Grapes"));
+
+    </script>
+</body>
+</html>

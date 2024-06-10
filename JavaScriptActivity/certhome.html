@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="certi.js"></script>
+</head>
+<body>
+    <div> 
+        <ul>
+            <li class=""><a href="./maneesha_home.html"><button >Home</button></a></li>
+            <li class=""><a href="./maneesha_newcertificate.html"><button>Issue Certificate</button></a></li>
+        </ul>
+        </div> 
+    <div>
+        <div>
+        <h1>Certificate Dapp</h1>
+        </div>
+        <br>
+        <div>
+        <img src="images/IMG-20240422-WA0000.jpg" class="">
+        </div>
+        <br>
+        <div>
+        <input id="searchid">
+        <a href="disPlay.html"> <button onclick="kbacert()">Search</button> </a>
+        </div>
+        <p id="id1"></p>
+        <p id="id2"></p>
+        <p id="id3"></p>
+        <p id="id4"></p>
+        <p id="id5"></p>
+
+    </div>
+    <script>
+        document.getElementById("id1").innerHTML=localStorage.getItem("id");
+        document.getElementById("id2").innerHTML=localStorage.getItem("name");
+        document.getElementById("id3").innerHTML=localStorage.getItem("course");
+        document.getElementById("id4").innerHTML=localStorage.getItem("grade");
+        document.getElementById("id5").innerHTML=localStorage.getItem("date");
+    </script>
+</body>
+</html>

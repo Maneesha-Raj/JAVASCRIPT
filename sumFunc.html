@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=10;
+        let y=30;
+        let z=x+y;
+        document.write("<br>The sum is : ",z);
+
+        function sum(){  //function
+            let a=50;
+            let b=30;
+            let c=a+b;
+            document.write("<br>The sum is :",c);
+           
+        }
+        sum();  //function calling
+        document.write("<br>Hello , how are you?");
+        document.write("<br>I am fine");
+        sum();
+
+
+        //outside function
+        function sum1(k,l){
+            let c1=k+l;
+            document.write("<br>The sum is : ",c1);
+
+        }
+
+        document.write("<br>");
+        document.write("<br>First Sum");
+        let m=20;
+        let n=50;
+        sum1(m,n); //calling function sum1()
+        document.write("<br>");
+
+        document.write("<br>Second Sum");
+        let i=210;
+        let j=50;
+        sum1(i,j);  //again calling function sum1()
+        document.write("<br>");
+
+        document.write("<br>Third Sum");
+        let f=120;
+        let g=90;
+        sum1(f,g);
+        document.write("<br>");
+
+        document.write("<br>Fourth Sum");
+        let u=200;
+        let v=300;
+        sum1(u,v);
+        document.write("<br>");
+
+        //using three variables
+       
+        function sum2(k,l,s){  //JavaScript doesn't identify function overloading
+            let c1=k+l+s;
+            document.write("<br>The sum is : ",c1);
+
+        }
+
+        document.write("<br>Three Parameters");
+        document.write("<br>First Sum");
+        
+        let d1=10;
+        sum2(m,n,d1); //calling function sum1()
+        document.write("<br>");
+
+        document.write("<br>Second Sum");
+        let i1=210;
+        let j1=50;
+        let h1=10;
+        sum2(i1,j1,h1);  //again calling function sum1()
+        document.write("<br>");
+
+        document.write("<br>Third Sum");
+        let f1=120;
+        let g1=90;
+        let p1=20;
+        sum2(f1,g1,p1);
+        document.write("<br>");
+
+        document.write("<br>Fourth Sum");
+        let u1=200;
+        let v1=300;
+        let w1=50;
+        sum2(u1,v1,w1);
+        document.write("<br>");
+
+
+        //'return'  value
+        function sum3(p,q){
+            let r=p+q;
+            return r;  //return the value in r
+        }
+        let x1=20;
+        let y1=60;
+        let z1=sum3(x1,y1);
+        document.write("<br>Sum of two numbers is : ",z1);
+        let t=2;
+        let product=z1*t;
+        document.write("<br>Product is : ",product);
+
+
+
+    </script>
+</body>
+</html>

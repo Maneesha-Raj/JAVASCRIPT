@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>Scope of a variable </h4>
+    <h4>Using let</h4>
+    <p>outside function</p>
+    <p id="id1"></p>
+    <p>inside function</p>
+    <p id="id2"></p>
+    <p>outside function</p>
+    <p id="id3"></p>
+    <h4>Using var</h4>
+    <p>outside function</p>
+    <p id="id4"></p>
+    <p>inside function</p>
+    <p id="id5"></p>
+    <p>outside function</p>
+    <p id="id6"></p>
+
+
+    <script>
+        a=5;
+        b=6;
+        c=a+b;
+        document.write("<br>Variable Declaration :Sum= ",c);
+
+        var x=10;
+        var y=19;
+        var z=x+y;
+        document.write("<br>Variable Declaration using var : Sum= ",z);
+
+        let p=3;
+        let q=5;
+        let r=p+q;
+        document.write("<br>Variable Declaration using let : Sum= ",r);
+
+        const pi=3.14;
+        document.write("<br>Constant variable : pi=",pi);
+
+        //scope of a variable
+
+        let s=10;
+        document.getElementById("id1").innerHTML=s;
+        {
+            let s=15;
+            document.getElementById("id2").innerHTML=s;
+        }
+        document.getElementById("id3").innerHTML=s;
+
+        var d=25;
+        document.getElementById("id4").innerHTML=d;
+        {
+            var d=10;
+            document.getElementById("id5").innerHTML=d;
+        }
+        document.getElementById("id6").innerHTML=d;
+
+
+
+
+
+
+    </script>
+</body>
+</html>
